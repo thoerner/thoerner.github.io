@@ -16,8 +16,8 @@
 
 		#myBtn {
 			position: fixed; /* Fixed/sticky position */
-			top: 20px; /* Place the button at the bottom of the page */
-			left: 30px; /* Place the button 30px from the right */
+			top: 20px;
+			left: 30px;
 			z-index: 99; /* Make sure it does not overlap */
 			border: none; /* Remove borders */
 			outline: none; /* Remove outline */
@@ -30,11 +30,33 @@
 			padding-bottom: 3px;
 			border-radius: 8px; /* Rounded corners */
 			font-size: 16px; /* Increase font size */
-    }
+    		}
 
-    #myBtn:hover {
+    		#myBtn:hover {
 			background-color: #555; /* Add a dark-grey background on hover */
-    }
+    		}
+		
+		#faqBtn {
+			position: fixed; /* Fixed/sticky position */
+			top: 20px;
+			right: 30px;
+			z-index: 98; /* Make sure it does not overlap */
+			border: none; /* Remove borders */
+			outline: none; /* Remove outline */
+			background-color: magenta; /* Set a background color */
+			color: white; /* Text color */
+			cursor: pointer; /* Add a mouse pointer on hover */
+			padding-right: 15px; /* Some padding */
+			padding-left: 15px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			border-radius: 8px; /* Rounded corners */
+			font-size: 16px; /* Increase font size */
+	    	}
+		
+		#faqBtn:hover {
+			background-color: #555; /* Add a dark-grey background on hover */
+    		}
 
 	</style>
 
@@ -44,6 +66,8 @@
 
   <!-- Navigation -->
   <a href="https://puretail.vivatracker.com/home.aspx"><button id="myBtn" title="Back Home">Back to Home</button></a>
+  <a href="./TNX_FAQ_Reporting.pdf" target="_blank"><button id="faqBtn" title="FAQ">FAQ</button></a>	
+	
 <br><br><br>
 <h1>TNX (<span style="color: magenta">T</span>-mobile <span style="color: magenta">N</span>etwork e<span style="color: magenta">X</span>perience) "How-To"</h1>
 <ol>
