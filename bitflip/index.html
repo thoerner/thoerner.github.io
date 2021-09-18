@@ -11,7 +11,7 @@
     <button id="btn-logout">Logout</button>
     <button id="btn-get-stats">Refresh Stats</button>
 
-    <p>Test 9</p>
+    <p>Test 10</p>
 
     <script>
       // connect to Moralis server
@@ -48,7 +48,7 @@
         const transactions = await Moralis.Web3API.account.getTransactions(options);
         const polygonNFTs = await Moralis.Web3API.account.getNFTs(options);
         console.log(polygonNFTs);
-        console.log(polygonNFTs.length);
+        console.log(polygonNFTs[1]);
       }
 
       //get stats on page load
