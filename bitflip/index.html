@@ -11,7 +11,7 @@
     <button id="btn-logout">Logout</button>
     <button id="btn-get-stats">Refresh Stats</button>
 
-    <p>Test 3</p>
+    <p>Test 4</p>
 
     <script>
       // connect to Moralis server
@@ -45,7 +45,7 @@
       async function getUserTransactions(user) {
         // create query
         const query = new Moralis.Query("MaticTransactions");
-        query.equalTo("from_address", user.get("maticAddress"));
+        query.equalTo("from_address", user.get("ethAddress"));
 
         // subscribe to query updates
         const subscription = await query.subscribe();
