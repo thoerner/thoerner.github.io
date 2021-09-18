@@ -11,7 +11,7 @@
     <button id="btn-logout">Logout</button>
     <button id="btn-get-stats">Refresh Stats</button>
 
-    <p>Test 7</p>
+    <p>Test 8</p>
 
     <script>
       // connect to Moralis server
@@ -23,6 +23,7 @@
           user = await Moralis.authenticate();
         }
         console.log("logged in user:", user);
+        getStats();
       }
 
       async function logOut() {
@@ -45,7 +46,8 @@
       async function getUserTransactions(user) {
         const options = { chain: "matic" };
         const transactions = await Moralis.Web3API.account.getTransactions(options);
-        console.log(transactions);
+        const polygonNFTs = await Moralis.Web3API.account.getNFTs(options);
+        console.log(polygonNFTs);
       }
 
       //get stats on page load
