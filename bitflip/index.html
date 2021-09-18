@@ -11,7 +11,7 @@
     <button id="btn-logout">Logout</button>
     <button id="btn-get-stats">Refresh Stats</button>
 
-    <p>Test 1</p>
+    <p>Test 2</p>
 
     <script>
       // connect to Moralis server
@@ -48,7 +48,7 @@
         query.equalTo("from_address", user.get("ethAddress"));
 
         // subscribe to query updates
-        const subscription = await.subscribe();
+        const subscription = await query.subscribe();
         handleNewTransaction(subscription);
 
         // run query
