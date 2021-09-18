@@ -14,5 +14,6 @@ login = async () => {
 logout = async () => await Moralis.logOut();
 
 document.getElementById("loginWithMetamask").onclick = login;
+document.getElementById("logout").onclick = logout;
 
 init();
